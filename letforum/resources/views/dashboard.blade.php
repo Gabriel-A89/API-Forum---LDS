@@ -1,3 +1,10 @@
+@extends('common.mdb-pagewithmenu')
+
+<link rel="stylesheet" href="../css/app.css">
+
+<script src="../js/app.js"></script>
+<script src="../js/bootstrap.js"></script>
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">

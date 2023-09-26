@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('site.sobre');
+    return view('');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->middleware(['auth'])->name('register');
+
+require __DIR__.'/auth.php';
