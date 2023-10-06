@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: white; /* Um tom mais claro de azul para o fundo */
+}
+
+.main-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.textfield input::placeholder {
+    color: #6c757d; /* Cinza escuro para o texto do placeholder */
+}
+
+.left-cadastro, .right-cadastro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px; /* Define uma largura máxima */
+    padding: 40px; /* Adiciona um espaço interno maior */
+    box-sizing: border-box; /* Inclui a largura do padding na largura total */
+    background-color: #8ef5f7; /* Fundo branco para o card */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Sutil sombra */
+    margin-bottom: 30px; /* Aumenta o espaço entre os cards */
+}
+
+.left-cadastro {
+    margin-right: 15px; /* Adiciona espaço à direita para separar os cards */
+    background-color:#42aaac; /* Altera o fundo para preto */
+    color: #fff; /* Altera a cor do texto para branco */
+}
+
+.right-cadastro {
+    margin-left: 15px; /* Adiciona espaço à esquerda para separar os cards */
+    background-color: #42aaac; /* Altera o fundo para preto */
+    color: #fff; /* Altera a cor do texto para branco */
+}
+
+.left-cadastro h1, .right-cadastro h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white; /* Azul */
+    margin-bottom: 30px; /* Maior espaço abaixo do título */
+    max-width: 90%; /* Define o tamanho máximo para evitar que o texto fique muito grande em telas largas */
+}
+
+.left-cadastro-img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+.card-cadastro {
+    width: 100%;
+    text-align: center;
+}
+
+.card-cadastro h1 {
+    color: #007bff; /* Azul */
+    font-weight: 700; /* Levemente reduzido para um estilo mais elegante */
+    margin-bottom: 30px; /* Maior espaço abaixo do título */
+}
+
+.textfield {
+    margin: 20px 0; /* Maior espaço entre os campos */
+    width: 100%;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 6px; /* Cantos ligeiramente arredondados */
+    padding: 15px;
+    color: #000; /* Texto preto para melhor legibilidade */
+    font-size: 14px; /* Um pouco maior para facilitar a leitura */
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.1); /* Sutil sombra */
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    display: block;
+    color: #6c757d; /* Cinza escuro para o texto do label */
+    font-weight: 600;
+    margin-bottom: 10px; /* Espaço um pouco menor abaixo do label */
+    text-align: left;
+}
+
+.btn-cadastro{
+    width: 100%;
+    padding: 15px 0;
+    margin: 20px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px; /* Ligeiramente reduzido para um estilo mais elegante */
+    color: #000; /* Texto preto */
+    background: #fff; /* Fundo branco */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-cadastro:hover {
+    background: #ccc; /* Cinza claro ao passar o mouse */
+}
+
+@media only screen and (max-width: 600px) {
+    .left-cadastro h1, .right-cadastro h1 {
+        display: none;
+    }
+
+    .left-cadastro, .right-cadastro {
+        width: 100%;
+        height: auto;
+        max-width: none; /* Remove a largura máxima */
+    }
+
+    .left-cadastro-image {
+        width: 80%; /* Reduz a largura da imagem em telas menores */
+        max-width: 250px; /* Limita a largura máxima */
+    }
+}

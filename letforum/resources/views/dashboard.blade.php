@@ -1,9 +1,9 @@
 @extends('common.mdb-pagewithmenu')
 
-<link rel="stylesheet" href="../css/app.css">
 
-<script src="../js/app.js"></script>
-<script src="../js/bootstrap.js"></script>
+@section('content')
+
+@include('parts.public-navbar')
 
 <x-app-layout>
     <x-slot name="header">
@@ -22,3 +22,4 @@
         </div>
     </div>
 </x-app-layout>
+@endsection

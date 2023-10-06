@@ -2,6 +2,10 @@
 
 
 @section('content')
+
+
+@include('parts.public-navbar')
+
     <div class="container ">
         <div class="row ">
             <!-- Jumbotron -->
@@ -245,5 +249,6 @@
         </div>
 
     </div>
+@include('parts.public-footer')
 
 @endsection

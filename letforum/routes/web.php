@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('');
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -25,5 +25,34 @@ Route::get('/dashboard', function () {
 Route::get('/register', function () {
     return view('auth.register');
 })->middleware(['auth'])->name('register');
+
+
+
+Route::get('/userLogin', function () {
+    return view('site.login2');
+})->name('userLogin');
+
+Route::get('/cadastro', function () {
+    return view('site.cadastro');
+});
+
+
+
+Route::get('/home', function () {
+    return view('site.home');
+})->name('home');
+
+Route::get('/contato', function () {
+    return view('site.contato');
+})->name('contato');
+
+Route::get('/sobre', function () {
+    return view('site.sobre');
+})->name('sobre');
+
+Route::get('/comunidade', function () {
+    return view('site.comunidade');
+})->name('comunidade');
+
 
 require __DIR__.'/auth.php';
