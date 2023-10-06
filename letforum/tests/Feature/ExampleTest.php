@@ -18,4 +18,19 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    function can_create_a_thread() {
+        //given 
+        $thread = [
+            'title' => 'test',
+            'body' => 'test body'
+        ];
+
+        //when
+        $response = $this->post('/thread');
+
+        //then
+        $response->assertSee($thread->title);
+        $response->assertSee($thread->body);
+    }
 }
